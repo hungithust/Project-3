@@ -1,0 +1,8 @@
+torch>=1.13.0
+transformers>=4.30.0
+sentencepiece>=0.1.99
+numpy>=1.24.0
+
+# Optional (if you plan to use GPU acceleration / model sharding)
+accelerate>=0.20.0
+huggingface-hub>=0.15.0
