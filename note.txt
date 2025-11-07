@@ -1,0 +1,12 @@
+Dùng phoBERT và wav2vec2 của facebook để embeddings
+link model wav2vec2: https://huggingface.co/facebook/wav2vec2-xls-r-300m/blob/main/config.json
+Có thể embedding cho từng từ hoặc cả câu
+
+
+
+Có 3 phương án hoặc dùng cả 3 sau khi embedding:
+1. Ghép vào rồi cho vào vài layer transformers, self-attention tự train
+    - Vấn đề là mô hình tự train thì chưa được kiểm định, số lớp và số trọng số quá ít so với embedding, không hiệu quả lắm
+2. Dùng 2 model riêng đã pretrain, tự đi tìm và dự đoán xong mới ghép lại có trọng số dựa trên độ chính xác
+
+3. Dùng 2 vector riêng rồi cross attention
