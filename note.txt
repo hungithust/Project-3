@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Dùng phoBERT và wav2vec2 của facebook để embeddings
 link model wav2vec2: https://huggingface.co/facebook/wav2vec2-xls-r-300m/blob/main/config.json
 Có thể embedding cho từng từ hoặc cả câu
@@ -10,3 +11,9 @@ Có 3 phương án hoặc dùng cả 3 sau khi embedding:
 2. Dùng 2 model riêng đã pretrain, tự đi tìm và dự đoán xong mới ghép lại có trọng số dựa trên độ chính xác
 
 3. Dùng 2 vector riêng rồi cross attention
+=======
+last: 
+https://gemini.google.com/share/2630141f01de
+https://claude.ai/share/cedecc75-034d-4603-b1db-feebc5c9a673
+https://notebooklm.google.com/notebook/e443dea4-96c6-4b1b-9082-0854e826a31d
+>>>>>>> 8e2340b7636ff1f5d5d9c241f60fca334d688c5f
